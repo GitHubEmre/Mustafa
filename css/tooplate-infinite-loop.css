@@ -440,21 +440,31 @@ figure.effect-honey:hover h2 i {
 
 /* Contact */
 
-#contact {
+#nous-contacter {
   color: white;
-  background-color: #001828;
-  background-image: url(../img/infinite-loop-03.jpg);
-  background-position: center;
+  padding-bottom: 24px;
+  padding-top: 36px;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/main-background.jpg);
   background-repeat: no-repeat;
-  min-height: 980px;
   position: relative;
-  padding-bottom: 50px;
-  padding-top: 100px;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .contact-item {
-  margin-left: 20px;
-  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item hr {
+  width: 3rem;
+  margin: 0.2rem auto 0.75rem auto;
+  border-bottom: solid 2px white;
 }
 
 .item-link {
@@ -510,14 +520,6 @@ figure.effect-honey:hover h2 i {
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: white;
-}
-
-.tm-footer {
-  position: absolute;
-  bottom: 35px;
-  left: 0;
-  right: 0;
-  padding: 0 15px;
 }
 
 .tm-footer a {
@@ -655,7 +657,8 @@ p {
 }
 
 #whatwedo .our-activity .tm-text-primary,
-#realisations .tm-text-primary {
+#realisations .tm-text-primary,
+#nous-contacter .tm-section-title {
   margin-bottom: 24px !important;
   border-bottom: solid 2px rgba(0, 0, 0, 0.125);
   padding-bottom: 24px;
@@ -681,6 +684,25 @@ p {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-#realisations .tm-text-primary {
+#realisations .tm-text-primary,
+#nous-contacter .tm-section-title {
   border-bottom-color: white;
+}
+
+#nous-contacter .contact-container {
+  margin-bottom: 24px;
+}
+
+#nous-contacter i {
+  font-size: 2rem;
+  margin-bottom: .75rem;
+}
+
+#nous-contacter a {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  color: inherit;
+  text-decoration: none;
 }
