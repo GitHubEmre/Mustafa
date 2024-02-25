@@ -45,8 +45,8 @@ blockquote {
 }
 
 .tm-section-pad-top {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .tm-text-primary {
@@ -270,14 +270,12 @@ blockquote {
 /* Work */
 
 .tm-section-desc {
-  max-width: 650px;
   width: 100%;
-  font-size: 0.9rem;
+  font-size: 16px;
 }
 
 .tm-gallery-container {
-  padding-top: 70px;
-  padding-bottom: 120px;
+  padding-top: 8px;
 }
 
 .tm-gallery-item {
@@ -285,7 +283,7 @@ blockquote {
 }
 
 .slick-dots {
-  bottom: -65px;
+  margin-top: 16px;
 }
 
 .slick-dots li {
@@ -439,10 +437,6 @@ figure.effect-honey:hover h2 i {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-
-.tm-container-gallery {
-	padding-top: 30px;
-	}
 
 /* Contact */
 
@@ -660,7 +654,8 @@ p {
   margin-bottom: 18px !important;
 }
 
-#whatwedo .our-activity .tm-text-primary {
+#whatwedo .our-activity .tm-text-primary,
+#realisations .tm-text-primary {
   margin-bottom: 24px !important;
   border-bottom: solid 2px rgba(0, 0, 0, 0.125);
   padding-bottom: 24px;
@@ -669,6 +664,23 @@ p {
   margin-right: auto;
 }
 
-#gallery {
-  background-color: greenyellow;
+#realisations {
+  position: relative;
+  background-image: url(../img/carousel-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#realisations::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#realisations .tm-text-primary {
+  border-bottom-color: white;
 }
