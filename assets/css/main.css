@@ -190,60 +190,6 @@ ul.icons.major li {
 	padding-right: 3.5em;
 }
 
-/* Spotlight */
-.spotlight {
-	-moz-align-items: center;
-	-webkit-align-items: center;
-	-ms-align-items: center;
-	align-items: center;
-	display: -moz-flex;
-	display: -webkit-flex;
-	display: -ms-flex;
-	display: flex;
-}
-.spotlight .image {
-	-moz-order: 1;
-	-webkit-order: 1;
-	-ms-order: 1;
-	order: 1;
-	border-radius: 0;
-	width: 40%;
-}
-.spotlight .image img {
-	border-radius: 0;
-	width: 100%;
-}
-.spotlight .content {
-	padding: 2em 4em 0.1em 4em ;
-	-moz-order: 2;
-	-webkit-order: 2;
-	-ms-order: 2;
-	order: 2;
-	max-width: 48em;
-	width: 60%;
-}
-.spotlight:nth-child(2n) {
-	-moz-flex-direction: row-reverse;
-	-webkit-flex-direction: row-reverse;
-	-ms-flex-direction: row-reverse;
-	flex-direction: row-reverse;
-}
-.spotlight:nth-child(1) {
-	background-color: #b1ddab;
-}
-.spotlight:nth-child(2) {
-	background-color: #95b78f;
-}
-.spotlight:nth-child(3) {
-	background-color: #799273;
-}
-.spotlight:nth-child(4) {
-	background-color: #5e6f5a;
-}
-.spotlight:nth-child(5) {
-	background-color: #444e41;
-}
-
 /* Wrapper */
 .wrapper {
 	padding: 6em 0 4em 0 ;
@@ -251,9 +197,6 @@ ul.icons.major li {
 .wrapper.activity > .inner {
 	width: 60em;
 	margin: 0 auto;
-}
-.wrapper.services {
-	padding: 0;
 }
 .wrapper.activity {
 	background-color: #fff;
@@ -296,9 +239,6 @@ ul.icons.major li {
 }
 .wrapper.activity ul.alt li {
 	border-color: rgba(0, 0, 0, 0.125);
-}
-.wrapper.services {
-	background-color: #2e3842;
 }
 
 /* Page Wrapper + Menu */
@@ -787,12 +727,6 @@ body.is-mobile.landing #contacter {
 	body {
 		font-size: 12pt;
 	}
-	.spotlight .image {
-		width: 45%;
-	}
-	.spotlight .content {
-		width: 55%;
-	}
 	.wrapper.activity > .inner {
 		width: 90%;
 	}
@@ -800,18 +734,6 @@ body.is-mobile.landing #contacter {
 @media screen and (max-width: 980px) {
 	header br {
 		display: none;
-	}
-	.spotlight {
-		display: block;
-	}
-	.spotlight .image {
-		width: 100%;
-	}
-	.spotlight .content {
-		padding: 4em 3em 2em 3em ;
-		max-width: none;
-		text-align: center;
-		width: 100%;
 	}
 	.wrapper.activity > .inner {
 		width: 100%;
@@ -837,9 +759,6 @@ body.is-mobile.landing #contacter {
 	}
 	ul.icons.major li {
 		padding: 0 1em !important;
-	}
-	.spotlight .content {
-		padding: 3em 2em 1em 2em ;
 	}
 	.wrapper.activity header.major {
 		margin: 0 0 2em 0;
